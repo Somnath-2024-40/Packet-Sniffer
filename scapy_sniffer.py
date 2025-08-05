@@ -15,7 +15,7 @@ def sniff_packets(iface):
     if iface:
         sniff(prn= process_packet,iface= iface, store=False)
     else:
-        sniff(prn = process_packet, store=False)
+        sniff(prn = process_packet, store=False) 
 def process_packet(packets):
     # TCP sniffing
     if packets.haslayer(TCP):
